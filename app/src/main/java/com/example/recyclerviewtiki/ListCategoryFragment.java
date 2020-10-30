@@ -1,7 +1,9 @@
 package com.example.recyclerviewtiki;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -41,6 +43,12 @@ public class ListCategoryFragment extends Fragment {
     }
 
     @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        callBack = (CallBack) context;
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         categories = CategoryLab.getInstance(getActivity()).getCategories();
@@ -63,5 +71,11 @@ public class ListCategoryFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        callBack = null;
     }
 }

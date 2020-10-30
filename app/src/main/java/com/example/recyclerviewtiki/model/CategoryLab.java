@@ -25,19 +25,63 @@ public class CategoryLab {
     }
 
     public List<Category> getCategories() {
-        Category c1= new Category(1,"Category 1",
-                Arrays.asList(new Product(1,"Product 1"),
-                        new Product(2,"Product 2"),
-                        new Product(3,"Product 3")));
-        Category c2= new Category(1,"Category 2",
-                Arrays.asList(new Product(4,"Product 4"),
-                        new Product(5,"Product 5"),
-                        new Product(6,"Product 6")));
+        Category c1 = new Category(1, "Category 1",
+                Arrays.asList(new Product(1, "Product 1"),
+                        new Product(2, "Product 2"),
+                        new Product(3, "Product 3")));
+        Category c2 = new Category(2, "Category 2",
+                Arrays.asList(new Product(4, "Product 4"),
+                        new Product(5, "Product 5"),
+                        new Product(6, "Product 6")));
 
-        Category c3= new Category(1,"Category 3",
-                Arrays.asList(new Product(7,"Product 7"),
-                        new Product(8,"Product 8"),
-                        new Product(9,"Product 9")));
+        Category c3 = new Category(3, "Category 3",
+                Arrays.asList(new Product(7, "Product 7"),
+                        new Product(8, "Product 8"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(8, "Product 8"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(8, "Product 8"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(8, "Product 8"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+                        new Product(9, "Product 9"),
+
+
+                        new Product(9, "Product 9")));
+
 
         categories.add(c1);
         categories.add(c2);
@@ -46,9 +90,9 @@ public class CategoryLab {
         return categories;
     }
 
-    public Category getCategory(int id){
+    public Category getCategory(int id) {
         for (Category category : categories) {
-            if(category.getId() == id){
+            if (category.getId() == id) {
                 return category;
             }
         }
